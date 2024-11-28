@@ -1,7 +1,7 @@
 const buscar= document.querySelector(".bx.bx-search");
 const menu= document.querySelector(".menu-icon");
 
-let buscadore = document.querySelector("search");
+let buscadore = document.querySelector(".search");
 let note = document.querySelector(".note");
 let listas = document.querySelector(".lista");
 

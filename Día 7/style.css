@@ -36,7 +36,6 @@ body{
 
 .active{
     transform: translateX(50%);
-    transition: 500ms ease-in-out;
 }
 
 /* Header */
