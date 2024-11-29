@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+/* Body */
+body{
+    height: 100vh;
+
+    /*display grid para centrar elementos dentro del body*/
+    display: grid;
+    place-items: center;
+
+}
+.container{
+    height: 400px;
+    width: 400px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.341) 1px 2px 10px 0px;
+    background-color: rgb(76, 76, 76);
+    color: white;
+    font-size: "Open Sans", Helvetica, sans-serif;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.circulo{
+    position: absolute;
+    width: 212px;
+    height: 212px;
+    top: 87px;
+    left: 87px;
+    background: rgb(36, 36, 36);
+    border: 7px solid rgb(58, 58, 58);
+    text-align: center;
+    border-radius: 50%;
+
+    display: grid;
+    place-items: center;
+}
+
+.esfera{
+    position: absolute;
+    height: 62%;
+    width: 62%;
+    transform: rotate(calc(5deg * var(--esfera))); /*  */
+}
+
+.puntos_1{
+    height: 2%;
+    width: 2%;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.puntos_2{
+    right: 0;
+    height: 2%;
+    width: 2%;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.puntos_3{
+    bottom: 0;
+    right: 0;
+    height: 2%;
+    width: 2%;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.puntos_4{
+    bottom: 0;
+    height: 2%;
+    width: 2%;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.spinner{
+    position: absolute;
+    width: 202px;
+    height: 202px;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    
+}
+
+.spinner circle{
+    fill: none;
+    stroke: #f85b5b;
+    stroke-width: 3;
+    stroke-dasharray: 625;
+    animation: spinner 5s linear infinite;
+    transform-origin: center center;
+    transform: rotate(-90deg);
+}
+
+@keyframes spinner {
+    from{
+        stroke-dashoffset: 625;
+        transform: rotate(-90deg) scaleY(1);
+    } 
+    50%{
+        stroke-dashoffset: 0;
+        transform: rotate(-90deg) scaleY(1);
+    }
+    50.001%{
+        transform: rotate(-90deg) scaleY(-1);
+    }
+    to{
+        stroke-dashoffset: 625;
+        transform: rotate(-90deg) scaleY(-1);
+    }
+}
+
+.fecha{
+    position: absolute;
+    top: 68px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.time{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 4px 0;
+    font-size: 40px;
+}
+
+.beat{
+    position: absolute;
+    top: 130px;
+    left: 57px;
+    font-size: 12px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.energy{
+    position: absolute;
+    top: 131px;
+    left: 95px;
+    font-size: 12px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.bxs-heart{
+    animation: latido 0.4s ease-in-out infinite;
+}
+
+@keyframes latido {
+    0%{
+        transform: scale(1);
+    }
+    35%{
+        transform: scale(1.2);
+    }
+}
+
