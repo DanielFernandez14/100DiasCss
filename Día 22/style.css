@@ -9,10 +9,12 @@ body{
     position: absolute;
     width: 400px;
     height: 400px;
-    border-radius: 2px;
+    border-radius: 10px;
+    box-shadow: 15px 10px 6px grey;
     background-color: #28404e;
     color: white;
     font-family: "open-sans", "sans-serif";
+
 }
 
 .center{
